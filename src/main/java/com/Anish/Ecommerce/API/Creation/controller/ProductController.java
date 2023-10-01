@@ -22,4 +22,8 @@ public class ProductController {
     public List<Product> getAllProduct() {
         return productService.getAllProduct();
     }
+    @GetMapping("/productById")
+    public  List<Product> getProductsByCategory(@RequestParam String category) {
+        return productService.getProductsByCategory(category);
+    }
 }
