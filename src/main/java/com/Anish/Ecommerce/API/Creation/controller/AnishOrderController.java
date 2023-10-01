@@ -15,8 +15,8 @@ public class AnishOrderController {
     @Autowired
     AnishOrderService anishOrderService;
 
-//    @PostMapping
-//    public AnishOrder createOrder(@RequestBody AnishOrder order) {
-//        return anishOrderService.createOrder(order);
-//    }
+    @PostMapping
+    public AnishOrder createOrder(@RequestBody AnishOrder order) {
+        return anishOrderService.createOrder(order);
+    }
 }

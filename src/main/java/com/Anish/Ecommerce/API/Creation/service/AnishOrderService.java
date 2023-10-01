@@ -11,7 +11,7 @@ public class AnishOrderService {
     @Autowired
     AnishOrderRepo anishOrderRepo;
 
-//    public AnishOrder createOrder(AnishOrder order) {
-//        return anishOrderRepo.save(order);
-//    }
+    public AnishOrder createOrder(AnishOrder order) {
+        return anishOrderRepo.save(order);
+    }
 }
