@@ -5,6 +5,8 @@ import com.Anish.Ecommerce.API.Creation.repo.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProductService {
     @Autowired
@@ -13,4 +15,8 @@ public class ProductService {
     public Product createProduct(Product product) {
         return productRepo.save(product);
     }
+
+//    public List<Product> getAllProduct() {
+//        return productRepo.findAll();
+//    }
 }

@@ -3,10 +3,9 @@ package com.Anish.Ecommerce.API.Creation.controller;
 import com.Anish.Ecommerce.API.Creation.model.Product;
 import com.Anish.Ecommerce.API.Creation.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/products")
@@ -18,4 +17,9 @@ public class ProductController {
     public Product createProduct(@RequestBody Product product){
         return productService.createProduct(product);
     }
+
+//    @GetMapping("/products")
+//    public List<Product> getAllProduct() {
+//        return productService.getAllProduct();
+//    }
 }
